@@ -11,9 +11,15 @@ export const Exercises = ({ exercises, setExercises, bodyPart }) => {
     const exercisesPerPage = 9;
 
     const indexOfLastExercise = currentPage * exercisesPerPage;
-
     const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-    const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise)
+
+    // Check if exercises is an array before slicing
+    let currentExercises = [];
+    if (Array.isArray(exercises)) {
+        currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
+    } else {
+        console.error('Expected an array for exercises, but got something else.');
+    }
 
     const paginate = (e, value) => {
         setCurrentPage(value);
