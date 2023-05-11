@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { Container, AppBar, Typography, Grow, Grid  } from '@mui/material';
+import { Container, AppBar, Typography, Grow, Grid  } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
 import { getPosts } from '../actions/posts'
 import Posts from "../components/Posts/Posts";
 import Form from "../components/Form/Form";
-// import useStyles from './styles'
+import useStyles from './styles'
 
 
 const PostPage = () => {
