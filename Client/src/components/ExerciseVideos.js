@@ -25,6 +25,11 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                         rel="noreferrer"
                     >
                         <img style={{ borderTopLeftRadius: '20px' }} src={item.video.thumbnails[0].url} alt={item.video.title} />
+                        <Box>
+                            <Typography variant='h6' color='#000'>
+                                {item.video.title}
+                            </Typography>
+                        </Box>
                     </a>
                 ))}
             </Stack>
