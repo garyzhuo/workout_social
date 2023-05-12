@@ -59,6 +59,7 @@ export const Exercises = ({ exercises, setExercises, bodyPart }) => {
             <Typography
                 variant='h3'
                 mb='46px'
+                sx={{ fontSize: { lg: '44px', xs: '25px' } }} fontWeight={700} color="#000"
             >
                 Showing Results
             </Typography>
