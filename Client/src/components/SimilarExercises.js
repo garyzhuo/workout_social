@@ -8,13 +8,22 @@ const SimilarExercises = ({targetMuscleExercises, equipmentExercises}) => {
         <Box sx={{
             mt: {lg: '100px', xs: '0px'}
         }}>
-            <Typography variant='h3'>
-                Exercises That Target The Same Muscle Group
+            <Typography variant='h3' mb={5}>
+            Muscle-Focused Workouts
             </Typography>
             <Stack direction="row" sx={{p: '2', position: 'relative'}}>
         {targetMuscleExercises.length ?
          <HorizontalScrollbar 
         data={targetMuscleExercises}/> 
+    :  <Loader/>}
+            </Stack>
+            <Typography variant='h3' mb={5}>
+            Equipment-Based Exercises
+            </Typography>
+            <Stack direction="row" sx={{p: '2', position: 'relative'}}>
+        {equipmentExercises.length ?
+         <HorizontalScrollbar 
+        data={equipmentExercises}/> 
     :  <Loader/>}
             </Stack>
         </Box>
