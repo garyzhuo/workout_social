@@ -4,6 +4,7 @@ import HeroBannerImage from '../assets/images/banner.png';
 import muscle from '../assets/images/lift.jpg';
 
 
+
 const HeroBanner = () => {
     return (
         // mostly styling, but this is the landing page
