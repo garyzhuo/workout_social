@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
-
-import Logo from '../assets/images/Logo.png'
+import squatLogo from '../assets/images/squatLogo.png';
 
 export const Navbar = () => {
     return (
@@ -15,7 +14,7 @@ export const Navbar = () => {
             }} px='20px'
         >
             <Link to="/">
-                <img src={Logo} alt='logo' style={{
+                <img src={squatLogo} alt='logo' style={{
                     width: '48px', height: '48px', margin: '0 20px'
                 }} />
             </Link>

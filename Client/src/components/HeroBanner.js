@@ -4,6 +4,7 @@ import HeroBannerImage from '../assets/images/banner.png';
 import muscle from '../assets/images/lift.jpg';
 
 
+
 const HeroBanner = () => {
     return (
         // mostly styling, but this is the landing page
@@ -29,11 +30,12 @@ const HeroBanner = () => {
                 Check out the most popular exercises
             </Typography>
             {/* This button will take you to the exercises */}
-            <Button variant='contained' color='error' ahref='#exercises'
-                sx={{ background: '#ff2625', padding: '10px' }}
-            >
+            <a href="#exercises" style={{ marginTop: '45px', textDecoration: 
+            'none', width: '200px', textAlign: 'center',
+             background: '#FF2625', padding: '14px', fontSize: '22px', 
+             textTransform: 'none', color: 'white', borderRadius: '4px' }}>
                 Explore Exercises
-            </Button>
+                </a>
 
             {/* This is the text that will display behind the image */}
             <Typography
