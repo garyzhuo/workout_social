@@ -13,8 +13,8 @@ const HeroBanner = () => {
             ml: { sm: '50px' }
         }} position="relative" p='20px'>
             {/* This will greet you with the landing page texts and images */}
-            <Typography color='#FF2625' fontWeight='600' fontSize='26px'>
-                Fitness Club
+            <Typography color='#FF2625' fontWeight='600' fontSize='28px'>
+            Z-Angelo Fitness
             </Typography>
             {/* The warrior within text is the main text that will greet you */}
             <Typography fontWeight={700}
