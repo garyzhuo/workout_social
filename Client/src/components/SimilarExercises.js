@@ -8,7 +8,7 @@ const SimilarExercises = ({targetMuscleExercises, equipmentExercises}) => {
         <Box sx={{
             mt: {lg: '100px', xs: '0px'}
         }}>
-            <Typography variant='h3' mb={5}>
+            <Typography sx={{ fontSize: { lg: '44px', xs: '25px' } }} fontWeight={700} color="#000" mb="33px">
             Muscle-Focused Workouts
             </Typography>
             <Stack direction="row" sx={{p: '2', position: 'relative'}}>
@@ -17,7 +17,7 @@ const SimilarExercises = ({targetMuscleExercises, equipmentExercises}) => {
         data={targetMuscleExercises}/> 
     :  <Loader/>}
             </Stack>
-            <Typography variant='h3' mb={5}>
+            <Typography sx={{ fontSize: { lg: '44px', xs: '25px' } }} fontWeight={700} color="#000" mb="33px" mt='44px'>
             Equipment-Based Exercises
             </Typography>
             <Stack direction="row" sx={{p: '2', position: 'relative'}}>
