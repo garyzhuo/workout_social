@@ -1,10 +1,13 @@
+import mongoose from 'mongoose';
+import express from 'express';
+
 import PostMessage from '../models/postMessage.js';
+
+const router = express.Router();
 
 export const getPosts = async (req, res) => {
     try {
         const postMessages = await PostMessage.find();
-
-        console.log(postMessages);
 
         res.status(200).json(postMessages);
     } catch (error) {
