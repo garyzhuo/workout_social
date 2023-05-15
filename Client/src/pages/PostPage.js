@@ -15,7 +15,7 @@ const PostPage = () => {
 
     useEffect(() => {
         dispatch(getPosts())
-    }, [dispatch])
+    }, [currentId, dispatch])
 
     return (
         <Container maxwidth="lg">
